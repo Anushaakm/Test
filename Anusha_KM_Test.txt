@@ -1,0 +1,117 @@
+1)Find min and max value in list.
+
+package aptitude.com.xworkz.aptidute.test;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class FindMaxAndMinInList {
+
+	public static Integer findMin(List<Integer> list)
+	{
+		return Collections.min(list);
+	}
+
+	public static Integer findMax(List<Integer> list)
+	{
+		return Collections.max(list);
+	}
+
+	public static void main(String[] args)
+	{
+
+		
+		List<Integer> list = new ArrayList<>();
+
+		list.add(45);
+		list.add(333);
+		list.add(76);
+		list.add(29);
+		list.add(900);
+		list.add(23);
+		list.add(474);
+		list.add(654);
+		list.add(29);
+		list.add(454);
+
+		System.out.println("Min: " + findMin(list));
+		System.out.println("Max: " + findMax(list));
+	}
+}
+
+2) Timmy and sarah 
+
+package aptitude.com.xworkz.aptidute.test;
+
+import java.util.Scanner;
+
+public class Love {
+
+	public static boolean flowersPetals(int flower1Petals, int flower2Petals) {
+		return false;
+	
+		
+	}
+	
+	    public static void main(String[] args) {
+
+	        Scanner flower1 = new Scanner(System.in);
+	        Scanner flower2 = new Scanner(System.in);
+
+	        System.out.print("Enter a number of petals: ");
+	        int num1 = flower1.nextInt();
+	        int num2 = flower2.nextInt();
+	        flowersPetals(num1,num2);
+	        
+	        if(num1%2==0 && num2%2==0) {
+	        	System.out.println("They are not in love");
+	        }else {
+	        	System.out.println("They are in love");
+	        }
+	    }
+	}
+
+3)‘Generalization‘:
+Converting a subclass type into a superclass type is called ‘Generalization‘ because we are making the subclass to become more general and its scope is widening. This is also called widening or up casting.
+
+‘Specialization‘:
+Converting a super class type into a sub class type is called ‘Specialization‘. Here, we are coming down from more general form to a specific form and hence the scope is narrowed. Hence, this is called narrowing or down-casting.
+
+
+4)a) By Declaring the class as final ,so we can avoid inheritence by other class .
+   b) String the example for final calss defined in java ApI.
+   c) Alternatives  to inheritence are : So far there is no alternative for inheritance  but we can achieve inheritance by using interface .
+
+5)List is the sorted collection .
+
+6)Array list:
+*Elements are stored in Sequensial list.
+*Reading elements in arrayList is fast.
+*Writing elements into array list is slow because it need to update every position one by one .
+*it internally uses array.
+
+Linked List:
+*Elements are stored in nodes.
+*Reading Elements in linked list is slow.
+*writing elements into linked list is fast.
+ 
+ 7)ListIterator: Sub Interface it extends the Itorator interface,It traverses only list collection implemented classes like LinkedList, ArrayList, etc. Traversal of elements can be done in both forward and backward direction. uses methods like hasnext(),next(),hasPrevious(),previous(),remove().
+ 
+ Itorator:It can traverse a collection of any type. Traversal can only be done in forwarding direction.
+ 
+ 
+ 10) Static polymorphism : -
+      Static polymorphism is a type of polymorphism that is polymorphism occurs in class level that is two methods having same name but differ in thire parameters, that collects the information to call a method during compile time.and this is also called as method overloading 
+	  
+	  Dynamic Polymorphism :- 
+	  dynamic polymorphism is a type of polymorphism  that is polymorphism that uses inheritance that collects information to call a method at run time. this is called as method over riding .
+	  
+11)  By encapsulation she can achive Security by restricting the properties by making them as private and giving acess through getter and setter methods.
+
+9) Memory leak is a situation when the garbage collector does not recognize the unused objects and they remain in the memory indefinitely that reduces the amount of memory allocated. Because of  the unused objects still being referenced that may lead to OutOfMemoryError. this is called memeory leakage .
+
+8)Covariant Method overriding means that when overriding a method in the child class, the return type may vary. Before java 5 it was not allowed to override any function if the return type is changed in the child class. But now it is possible only return type is subtype class.
+
+ 
+ 
